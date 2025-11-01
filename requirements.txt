@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+transformers
+aiohttp
+pydantic
+httpx
+langchain
+langchain-core
+langchain-community
+langchain-openai
