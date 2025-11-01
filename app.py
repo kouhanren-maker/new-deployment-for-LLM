@@ -26,6 +26,10 @@ app = FastAPI(title="AI Agent - OpenAI Cloud Version")
 SERVICE_VERSION = os.getenv("AGENT_SERVICE_VERSION", "0.2.0")
 SCHEMA_VERSION = "1.0"
 
+@app.get("/test")
+def test():
+    return {"status": "✅ Backend is running!"}
+
 # --- 保留你现有的比价直达接口 ---
 providers = [GoogleShoppingProvider()]
 orc = PriceCompareOrchestrator(providers=providers)
